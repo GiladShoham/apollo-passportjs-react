@@ -2,21 +2,28 @@
 
 React UI for apollo-passport.
 
-Copyright (c) 2016 by Gadi Cohen, released under the MIT license.
+Copyright (c) 2017 by Gilad Shoham & Gadi Cohen, released under the MIT license.
+
+## IMPORTANT NOTICE
+This package is named apollo-passportjs-react (instead of apollo-passport-react) in the npm.
+I did this in order to be able to release it to npm.
+The original author is not responding so i can't use the original name.
+
+This fork created in order to use my fork of [apollo-passport](https://www.npmjs.com/package/apollo-passportjs).
 
 ## Usage
 
-Install [apollo-passport](https://www.npmjs.com/package/apollo-passport).
+Install [apollo-passportjs](https://www.npmjs.com/package/apollo-passportjs).
 
 Install and setup this package:
 
 ```sh
-$ npm i --save apollo-passport-react
+$ npm i --save apollo-passportjs-react
 ```
 
 ```js
-import { LoginButtons } from 'apollo-passport-react';
-import 'apollo-passport-react/style/meteor.less';
+import { LoginButtons } from 'apollo-passportjs-react';
+import 'apollo-passportjs-react/style/meteor.less';
 
 // Wherever you export your apolloPassport instance from...
 // Note, not necessary if using "Option 2" (ApolloPassportProvider) below.
@@ -55,7 +62,7 @@ If you don't use Redux, you need to wrap your main app with an `ApolloPassportPr
 ```js
 import ApolloClient from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
-import ApolloPassportProvider from 'apollo-passport-react';
+import ApolloPassportProvider from 'apollo-passportjs-react/lib/provider';
 
 // Wherever you export your apolloPassport instance from...
 // Note, not necessary if using "Option 2" (ApolloPassportProvider) below.
@@ -76,7 +83,7 @@ ReactDOM.render(
 **Step 2**: to get the `auth` state, or parts of it, use the connect-like function from the library:
 
 ```js
-import apConnect from 'apollo-passport-react/lib/connect';
+import apConnect from 'apollo-passportjs-react/lib/connect';
 
 const MyComponent = () => ( <div>etc</div> );
 
@@ -91,9 +98,9 @@ Note: although it seems superfluous to provide an `{ auth: { ...data } }` formed
 
 Hopefully you saw the IN DEVELOPMENT section of the `apollo-passport` README.
 
-[Open issues sorted by thumbs-up](https://github.com/apollo-passport/react/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
+[Open issues sorted by thumbs-up](https://github.com/GiladShoham/apollo-passportjs-react/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
 
-Out of all of the apollo-passport-xxx packages, this is the least developed.  I'd love for someone else to be lead-maintaner for this package.  See also [open issues](https://github.com/apollo-passport/react/issues) (especially those marked as help-wanted) to see how you can help!  And the [CONTRIBUTING.md](CONTRIBUTING.md) file for design guidelines.
+Out of all of the apollo-passport-xxx packages, this is the least developed.  I'd love for someone else to be lead-maintaner for this package.  See also [open issues](https://github.com/GiladShoham/apollo-passportjs-react/issues) (especially those marked as help-wanted) to see how you can help!  And the [CONTRIBUTING.md](CONTRIBUTING.md) file for design guidelines.
 
 ## Custom CSS
 
