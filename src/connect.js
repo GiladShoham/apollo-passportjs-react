@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import invariant from 'invariant';
-import ApolloPassport from 'apollo-passport/lib/client';
+import ApolloPassport from 'apollo-passportjs/lib/client';
 
 function getDisplayName(WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component'

@@ -1,5 +1,5 @@
 import { Component, PropTypes, Children } from 'react';
-import ApolloPassport from 'apollo-passport/lib/client';
+import ApolloPassport from 'apollo-passportjs/lib/client';
 
 class ApolloPassportProvider extends Component {
 
